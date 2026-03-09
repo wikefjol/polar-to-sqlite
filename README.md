@@ -90,7 +90,8 @@ Then open http://localhost:8001 in your browser.
 To avoid data loss:
 - Run `polar-to-sqlite sync polar.db` at least once per month
 - Consider setting up a cron job or scheduled task
-- For historical data, export TCX/GPX files from Polar Flow web interface
+
+**⚠️ Historical Data Warning**: If you have years of training history in Polar Flow, the API cannot backfill it. Export your full history from https://flow.polar.com **now** as TCX/GPX files (File → Export training session). Store these exports safely even if you don't import them immediately. See [Issue #14](https://github.com/wikefjol/polar-to-sqlite/issues/14) for future import command plans.
 
 ## Authentication Options
 
